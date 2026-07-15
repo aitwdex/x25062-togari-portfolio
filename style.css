@@ -1,16 +1,94 @@
 @charset "UTF-8";
+body {
+    background-image: url(images/body-background.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+}
 
+/*top*/
 .top {
+    position: absolute;
+    background-image: url(images/home-top.png);
+    background-size: cover;
+    background-position: top;
     width: 100vw;
-    height: 100vh;
+    height: 925px;
 }
 
 .top-header {
     text-align: center;
     font-size: 48px;
+    padding-top: 25px;
 }
 
 .top-title {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 180px;
+    height: 90vh;
     font-size: 128px;
+}
+
+/*nav*/
+nav {
+    /*画面上に固定*/
+    position: fixed;
+    top: 26px;
+    right: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    color: #B4937C;
+
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 14px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 185px;
+    height: 37px;
+    border-radius: 100px;
+}
+
+.snsaicon {
+    /*画面上に固定*/
+    position: fixed;
+    top: 190px;
+    right: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+
+    z-index: 100;
+}
+
+.snsaicon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.snsaicon a img {
+    width: 34px;
 }
