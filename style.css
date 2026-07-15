@@ -1,5 +1,9 @@
 @charset "UTF-8";
 body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
     background-image: url(images/body-background.png);
     background-size: cover;
     background-position: top;
@@ -14,13 +18,15 @@ body {
     background-size: cover;
     background-position: top;
     width: 100vw;
-    height: 925px;
+    height: 960px;
 }
 
 .top-header {
     text-align: center;
     font-size: 48px;
-    padding-top: 25px;
+    padding-top: 15px;
+    letter-spacing: 5%; /*文字間隔*/
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); /*ドロップシャドウ*/
 }
 
 .top-title {
@@ -29,6 +35,8 @@ body {
     padding: 180px;
     height: 90vh;
     font-size: 128px;
+    letter-spacing: 30%; /*文字間隔*/
+    text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5); /*ドロップシャドウ*/
 }
 
 /*nav*/
@@ -68,7 +76,7 @@ nav li {
 .snsaicon {
     /*画面上に固定*/
     position: fixed;
-    top: 190px;
+    top: 180px;
     right: 35px;
 
     display: flex;
@@ -91,4 +99,18 @@ nav li {
 
 .snsaicon a img {
     width: 34px;
+}
+
+/*uparrow*/
+.uparrow {
+    /*画面上に固定*/
+    position: fixed;
+    top: 650px;
+    right: 35px;
+
+    z-index: 100;
+}
+
+.uparrow img {
+    width: 50px;
 }
