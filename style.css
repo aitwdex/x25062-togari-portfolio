@@ -13,7 +13,6 @@ body {
 
 /*top*/
 .top {
-    position: absolute;
     background-image: url(images/home-top.png);
     background-size: cover;
     background-position: top;
@@ -114,3 +113,5 @@ nav li {
 .uparrow img {
     width: 50px;
 }
+
+/*about*/
