@@ -128,6 +128,7 @@ nav li {
     font-size: 80px;
     gap: 55px;
     padding-top: 100px;
+    padding-bottom: 75px;
 }
 
 .line {
@@ -143,7 +144,6 @@ nav li {
     justify-content: space-around;
     margin: 0 auto;
     max-width: 1200px;
-    padding-top: 75px;
 }
 
 .profile-img {
@@ -275,7 +275,6 @@ nav li {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    padding-top: 75px;
     padding-bottom: 30px;
 }
 
@@ -331,22 +330,93 @@ nav li {
     z-index: 50;
 }
 
-.collection-btn {
+.works-collection-btn {
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
-.collection-btn button {
+.works-collection-btn button {
     width: 360px;
     height: 60px;
     background-color: #261814;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 
 /*skills*/
+.skills-info {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
 
+.skills-illustration {
+    width: 790px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 35px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.skills-info-title {
+    padding-top: 30px;
+    padding-left: 45px;
+}
+
+.skills-info-title h2 {
+    font-size: 36px;
+}
+
+.skills-info-title h4 {
+    font-size: 14px;
+}
+
+.illustration-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 16px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25)); /*ドロップシャドウ*/
+}
+
+.illustration-portrait-img {
+    width: 200px;
+    height: auto;
+}
+
+.illustration-landscape-img {
+    width: auto;
+    height: 200px;
+}
+
+.skills-collection-btn {
+    text-align: center;
+    padding-top: 36px;
+}
+
+.skills-collection-btn button {
+    width: 300px;
+    height: 50px;
+    background-color: #261814;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills-languages{
+    width: 380px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 35px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.launguages-info {
+    padding-top: 50px;
+}
 
 /*contact*/
