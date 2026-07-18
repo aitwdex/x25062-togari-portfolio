@@ -467,3 +467,152 @@ nav li {
 
 
 /*contact*/
+.description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px 50px;
+    width: 850px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    gap: 60px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-title {
+    font-size: 20px;
+}
+
+.form-group-title .any {
+    font-size: 14px;
+    font-weight: 400;
+    color: #D9D9D9;
+    padding-top: 9px;
+}
+
+.form-group input {
+    width: 500px;
+    min-height: 60px;
+    background-color: white;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    color: #261814;
+    padding-left: 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-group input::placeholder {
+    color: #D1D1D1;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+}
+
+.select {
+    /*基準(radioボタンと連携させるため)*/
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select input[type="radio"] {
+    /*display: none;だと読み上げ機能に反応しなくなる*/
+    opacity: 0; /*透明化*/
+    width: 100%;
+    height: 100%;
+
+    /*絶対値配置*/
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+.select .circle-btn {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkbox-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #261814;
+    
+    padding-top: 2px;/*強制中央(透明化したradioの枠線の分？)*/
+}
+
+.form-content textarea {
+    width: 100%;
+    max-width: 710px;
+    min-width: 710px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    color: #261814;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.form-content textarea::placeholder {
+    color: #D1D1D1;
+}
+
+.form-btn {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.form-btn button {
+    width: 300px;
+    height: 80px;
+    background-color: #261814;
+    border-radius: 45px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*copyright*/
+.copyright {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}

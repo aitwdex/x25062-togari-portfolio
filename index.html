@@ -213,10 +213,67 @@
                     <h2>Contact</h2>
                     <span class="line"></span>
                 </div>
+
+                <p class="description">案件のご相談は、下記のフォームよりお問い合わせください。<br>
+                内容を確認し次第、メールにてご連絡いたします。<br>
+                送信ボタンを押す前に、必ず入力内容をご確認いただきますようお願い致します。</p>
+
+                <div class="form-container">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-group-title" for="name">お名前</label>
+                            <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group-title" for="company">会社・団体名
+                                <div class="any">※任意</div>
+                            </label>
+                            <input type="text" id="company" name="company" placeholder="例）株式会社制作">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group-title" for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+                        </div>
+
+                        <fieldset aria-labelledby="contact-type"> <!-- aria-labelとidを合わせることで読み上げ機能に対応！　fieldsetとlegendの代わり-->
+                            <div id="contact-type" class="form-group-title">お問い合わせ種別</div>
+                            <div class="checkbox-group">
+                                <div class="select">
+                                    <input type="radio" id="production" name="work" value="production">
+                                    <div class="circle-btn"></div>
+                                    <label class="checkbox-title" for="production">制作依頼</label>
+                                </div>
+                                <div class="select">
+                                    <input type="radio" id="partership" name="work" value="partership">
+                                    <div class="circle-btn"></div>
+                                    <label class="checkbox-title" for="partership">パートナーシップ</label>
+                                </div>
+                                <div class="select">
+                                    <input type="radio" id="others" name="work" value="others">
+                                    <div class="circle-btn"></div>
+                                    <label class="checkbox-title" for="others">その他</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-content">
+                            <label class="form-group-title" for="content">お問い合わせ内容</label>
+                            <textarea id="content" name="content" placeholder="お問い合わせ内容はこちらへ" rows="12"></textarea>
+                        </div>
+
+                        <div class="form-btn">
+                            <button>この内容で送信する</button>
+                        </div>
+                    </form>
+                </div>
             </section>
 
 
-            <footer></footer>
+            <footer>
+                <p class="copyright">&copy; 2026 Togari Koga</p>
+            </footer>
         </main>
     </body>
 </html>
