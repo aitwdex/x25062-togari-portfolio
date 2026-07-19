@@ -709,11 +709,25 @@ fieldset {
         margin-left: auto;
         margin-right: auto;
     }
-        .about-profile-comment img {
+    .about-profile-comment img {
         display: none;
     }
 }
-
+/*-----------------------------------------------------------------------*/
+@media (max-width: 900px) {
+    .collection-frame {
+        /*とて横日の固定*/
+        aspect-ratio: 711 / 400;
+        width: 100vw;
+        height: auto;
+    }
+    .works-collection .arrow {
+        display: none;
+    }
+    .collection {
+        display: block; /*インラインの隙間を消す(文字扱いの隙間)*/
+    }
+}
 /*-----------------------------------------------------------------------*/
 @media (max-width: 800px) {
     .burger {
@@ -770,7 +784,15 @@ fieldset {
         display: none;
     }
 }
-
+/*-----------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .works-collection-btn button {
+        width: 280px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+}
 /*-----------------------------------------------------------------------*/
 /*その他*/
 .now-page {

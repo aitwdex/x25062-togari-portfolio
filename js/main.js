@@ -160,3 +160,16 @@ document.querySelector(".burger").addEventListener('click', () => {
         document.querySelector(".burger").classList.remove('burger-open');
     }
 });
+
+/*スマホ版　タップで動画再生*/
+document.querySelectorAll(".collection").forEach(video => {
+    video.addEventListener('click', () => {
+        //もしvideoが止まってたら
+        if(video.paused) {
+            video.play();
+        }
+        else {
+            video.pause();
+        }
+    });
+});
