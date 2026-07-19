@@ -148,3 +148,15 @@ document.querySelectorAll('.select input[type="radio"]').forEach(radio => {
         }
     });
 });
+
+/*ハンバーがクリック　nav表示*/
+document.querySelector(".burger").addEventListener('click', () => {
+    if(document.querySelector(".in-burger").classList.contains('close-burger')) {
+        document.querySelector(".in-burger").classList.remove('close-burger');
+        document.querySelector(".burger").classList.add('burger-open');
+    }
+    else {
+        document.querySelector(".in-burger").classList.add('close-burger');
+        document.querySelector(".burger").classList.remove('burger-open');
+    }
+});
