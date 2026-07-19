@@ -576,12 +576,25 @@ fieldset {
 }
 
 .select .circle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25px;
     height: 25px;
     background-color: white;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.select .in-circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.select .in-circle-click {
+    background-color: #261814;
 }
 
 

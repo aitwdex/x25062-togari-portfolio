@@ -136,3 +136,15 @@ document.querySelector(".collection-video").addEventListener('mouseenter', () =>
 document.querySelector(".collection-video").addEventListener('mouseleave', () => {
     document.querySelector(".collection-video").pause();
 });
+
+/*formのselectアニメーション　クッリク時表示*/
+document.querySelectorAll('.select input[type="radio"]').forEach(radio => {
+    radio.addEventListener('click', () => {
+        if(radio.checked) {
+            document.querySelectorAll(".select .in-circle").forEach(circle => {
+                circle.classList.remove('in-circle-click');
+            });
+            radio.closest(".select").querySelector(".in-circle").classList.add('in-circle-click');
+        }
+    });
+});
