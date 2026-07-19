@@ -222,7 +222,7 @@
 
                 <!--formの作成　Formspreeと連動させて実際にメールで届くように設定-->
                 <div class="form-container">
-                    <form action="https://formspree.io/f/xzdnrqlg" method="POST">
+                    <form action="https://formspree.io/f/xzdnrqlg" method="POST"> <!--method="POST"がないと送信されない。初期設定のGETだとURLに不具合が-->
                         <div class="form-group">
                             <label class="form-group-title" for="name">お名前</label>
                             <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
