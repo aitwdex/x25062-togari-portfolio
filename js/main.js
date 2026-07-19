@@ -57,6 +57,8 @@ document.querySelector(".circle1").addEventListener('click', () => {
     document.querySelector(".collection-img").classList.add('hid');
     document.querySelector(".collection-video").classList.remove('hid');
     document.querySelector(".collection-video").src = 'images/collection/CG/pokemon1.mp4';
+
+    document.querySelector(".collection-video").muted = true;
 });
 
 document.querySelector(".circle2").addEventListener('click', () => {
@@ -64,6 +66,8 @@ document.querySelector(".circle2").addEventListener('click', () => {
     document.querySelector(".collection-img").classList.add('hid');
     document.querySelector(".collection-video").classList.remove('hid');
     document.querySelector(".collection-video").src = 'images/collection/movie/shortmovie.mp4';
+
+    document.querySelector(".collection-video").muted = false;
 });
 
 document.querySelector(".circle3").addEventListener('click', () => {
@@ -71,6 +75,8 @@ document.querySelector(".circle3").addEventListener('click', () => {
     document.querySelector(".collection-img").classList.add('hid');
     document.querySelector(".collection-video").classList.remove('hid');
     document.querySelector(".collection-video").src = 'images/collection/music/ginger-video.mp4';
+
+    document.querySelector(".collection-video").muted = false;
 });
 
 document.querySelector(".circle4").addEventListener('click', () => {
@@ -86,6 +92,7 @@ document.querySelector(".circle5").addEventListener('click', () => {
     document.querySelector(".collection-img").classList.remove('hid');
     document.querySelector(".collection-img").src = 'images/collection/CG/pokemon-img.png';
 });
+
 //arrowクリック時の移動
 document.querySelector(".btn-right").addEventListener('click', () => {
     if(document.querySelector(".move-circle").style.left == '2px' || document.querySelector(".move-circle").style.left == '') {
@@ -122,3 +129,10 @@ document.querySelector(".btn-left").addEventListener('click', () => {
     }
 });
 
+/*動画再生hover*/
+document.querySelector(".collection-video").addEventListener('mouseenter', () => {
+    document.querySelector(".collection-video").play();
+});
+document.querySelector(".collection-video").addEventListener('mouseleave', () => {
+    document.querySelector(".collection-video").pause();
+});

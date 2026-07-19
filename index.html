@@ -132,7 +132,7 @@
                 <div class="works-collection">
                     <div class="hover-arrow btn-left"><img class="arrow" src="images/arrow/arrow-circle-left1.svg" alt="一つ戻るボタン"></div>
                     <div class="collection-frame">
-                        <video class="collection collection-video" src="images/collection/CG/pokemon1.mp4" alt="作品映像"></video>
+                        <video class="collection collection-video" src="images/collection/CG/pokemon1.mp4" alt="作品映像" muted loop></video> <!--muted = 消音, loop = ループ再生 | 音ありだとjsのplay()を無視する-->
                         <img class="collection collection-img hid" src="images/collection/illustration/gawrl_aicon1.png" alt="作品画像">
                         <div class="collection-filter"></div>
                     </div>
@@ -220,8 +220,9 @@
                 内容を確認し次第、メールにてご連絡いたします。<br>
                 送信ボタンを押す前に、必ず入力内容をご確認いただきますようお願い致します。</p>
 
+                <!--formの作成　Formspreeと連動させて実際にメールで届くように設定-->
                 <div class="form-container">
-                    <form>
+                    <form action="https://formspree.io/f/xzdnrqlg" method="POST">
                         <div class="form-group">
                             <label class="form-group-title" for="name">お名前</label>
                             <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
@@ -236,7 +237,7 @@
 
                         <div class="form-group">
                             <label class="form-group-title" for="email">メールアドレス</label>
-                            <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+                            <input type="email" id="email" name="_replyto" placeholder="例）example@mail.com" required>
                         </div>
 
                         <fieldset aria-labelledby="contact-type"> <!-- aria-labelとidを合わせることで読み上げ機能に対応！　fieldsetとlegendの代わり-->
@@ -248,9 +249,9 @@
                                     <label class="checkbox-title" for="production">制作依頼</label>
                                 </div>
                                 <div class="select">
-                                    <input type="radio" id="partership" name="work" value="partership">
+                                    <input type="radio" id="partnership" name="work" value="partnership">
                                     <div class="circle-btn"></div>
-                                    <label class="checkbox-title" for="partership">パートナーシップ</label>
+                                    <label class="checkbox-title" for="partnership">パートナーシップ</label>
                                 </div>
                                 <div class="select">
                                     <input type="radio" id="others" name="work" value="others">
@@ -266,7 +267,7 @@
                         </div>
 
                         <div class="form-btn">
-                            <button class="btn">この内容で送信する</button>
+                            <button type="submit" class="btn">この内容で送信する</button>
                         </div>
                     </form>
                 </div>
