@@ -22,7 +22,7 @@
         <main>
             <section class="top">
                 <div class="top-header">
-                    <h2>TOGARI KOGA</h2>
+                    <h2 id="top">TOGARI KOGA</h2>
                 </div>
 
                 <div class="top-title">
@@ -31,20 +31,20 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="now-page"><a href="#home">Home</a></li>
+                        <li class="hover-nav"><a href="#works">Works</a></li>
+                        <li class="hover-nav"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
 
                 <div class="snsaicon">
-                    <a href="#youtube"><img src="images/sns/youtube-logo1.svg" alt="Youtube"></a>
-                    <a href="#instagram"><img src="images/sns/instagram-logo1.svg" alt="Instagram"></a>
-                    <a href="#tiktok"><img src="images/sns/tiktok-logo1.svg" alt="TikTok"></a>
-                    <a href="#x"><img src="images/sns/x-logo1.svg" alt="X"></a>
+                    <a class="hover-nav sns-aicon" href="https://youtube.com/@trading_gau" target="_blank" rel="noopener noreferrer"><img src="images/sns/youtube-logo1.svg" alt="Youtube"></a>
+                    <a class="hover-nav sns-aicon" href="https://instagram.com/koga_.110?igsh=bHo3YW8xc3F4dTZ1&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="images/sns/instagram-logo1.svg" alt="Instagram"></a>
+                    <a class="hover-nav sns-aicon" href="https://tiktok.com/@trading_gau" target="_blank" rel="noopener noreferrer"><img src="images/sns/tiktok-logo1.svg" alt="TikTok"></a>
+                    <a class="hover-nav sns-aicon" href="https://x.com/toga_ri?s=11" target="_blank" rel="noopener noreferrer"><img src="images/sns/x-logo1.svg" alt="X"></a>
                 </div>
 
-                <a href="#top" class="uparrow"><img src="images/arrow-circle-up1.svg" alt="Topbottan"></a>
+                <a href="#top" class="uparrow hover-arrow"><img src="images/arrow/arrow-circle-up1.svg" alt="Topbottan"></a>
             </section>
 
 
@@ -130,11 +130,11 @@
                 </div>
 
                 <div class="works-collection">
-                    <img class="arrow" src="images/arrow-circle-left1.svg" alt="一つ戻るボタン">
+                    <div class="hover-arrow"><img class="arrow" src="images/arrow/arrow-circle-left1.svg" alt="一つ戻るボタン"></div>
                     <div class="collection-frame">
                         <video class="collection" src="images/collection/pokemon.mp4" alt="3DCGのpokemonの作品"></video>
                     </div>
-                    <img class="arrow" src="images/arrow-circle-right1.svg" alt="一つ進むボタン">
+                    <div class="hover-arrow"><img class="arrow" src="images/arrow/arrow-circle-right1.svg" alt="一つ進むボタン"></div>
                 </div>
 
                 <div class="collection-number">
@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="works-collection-btn">
-                    <button>作品一覧を見る</button>
+                    <button class="btn">作品一覧を見る</button>
                 </div>
             </section>
 
@@ -171,7 +171,7 @@
                             <img class="illustration-landscape-img" src="images/collection/illustration/inori.jpg" alt="結束いのりのイラスト">
                         </div>
                         <div class="skills-collection-btn">
-                            <button>作品一覧を見る</button>
+                            <button class="btn">作品一覧を見る</button>
                         </div>
                     </div>
 
@@ -264,7 +264,7 @@
                         </div>
 
                         <div class="form-btn">
-                            <button>この内容で送信する</button>
+                            <button class="btn">この内容で送信する</button>
                         </div>
                     </form>
                 </div>
@@ -275,5 +275,7 @@
                 <p class="copyright">&copy; 2026 Togari Koga</p>
             </footer>
         </main>
+
+        <script src="js/main.js"></script>
     </body>
 </html>

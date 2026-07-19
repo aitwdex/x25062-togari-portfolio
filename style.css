@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html {
+    /*htmlにこれを書くとんるっとした動きに！(Topbuttonを押したとき)*/
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -12,6 +17,12 @@ body {
 
     /*横のはみ出しカット = 横スクローク阻止*/
     overflow-x: hidden;
+
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: #261814;
 }
 
 
@@ -283,7 +294,6 @@ nav li {
 
 .arrow {
     width: 70px;
-    height: 70px;
 }
 
 .collection-frame {
@@ -341,7 +351,6 @@ nav li {
 .works-collection-btn button {
     width: 360px;
     height: 60px;
-    background-color: #261814;
     border-radius: 30px;
     font-size: 24px;
     font-weight: 600;
@@ -403,7 +412,6 @@ nav li {
 .skills-collection-btn button {
     width: 300px;
     height: 50px;
-    background-color: #261814;
     border-radius: 25px;
     font-size: 20px;
     font-weight: 600;
@@ -602,11 +610,17 @@ fieldset {
 .form-btn button {
     width: 300px;
     height: 80px;
-    background-color: #261814;
     border-radius: 45px;
     font-size: 20px;
     font-weight: 600;
 }
+
+
+/*その他*/
+.now-page {
+    color: #261814;
+}
+
 
 /*copyright*/
 .copyright {
@@ -615,4 +629,43 @@ fieldset {
     font-weight: 600;
     padding-top: 25px;
     padding-bottom: 15px;
+}
+
+/*その他の動き*/
+.btn {
+    cursor: pointer; /*カーソルの形変更*/
+}
+.select input[type="radio"] {
+    cursor: pointer;
+}
+.collection-number .circle {
+    cursor: pointer;
+}
+
+/*アニメーション*/
+.faceswap .faceimg1 {
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+.faceswap .faceimg2 {
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.btn-click {
+    background-color: white;
+    color: #261814;
+    border: 1px solid #261814;
+}
+
+/*ホバー時*/
+.hover-nav:hover {
+    color: white;
+    background-color: #B4937C;
+    border: 1px solid white;
+}
+.hover-arrow:hover {
+    background-color: white;
+    border-radius: 50%;
 }
