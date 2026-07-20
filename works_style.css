@@ -42,7 +42,7 @@ body {
 .uparrow {
     /*画面上に固定*/
     position: fixed;
-    top: 650px;
+    bottom: 50px;
     right: 35px;
 
     z-index: 100;
@@ -291,6 +291,15 @@ nav li a {
     }
 }
 /*-----------------------------------------------------------------------*/
+@media (max-height: 500px) {
+    .uparrow {
+        display: none;
+    }
+    .uparrow img {
+        display: none;
+    }
+}
+
 /*その他*/
 .now-page {
     color: #261814;
