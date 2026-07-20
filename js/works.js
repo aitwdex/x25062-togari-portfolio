@@ -59,3 +59,29 @@ document.querySelectorAll(".tag-btn").forEach((button) => {
         });
     });
 });
+
+
+/*作品の再生・停止 / videoへ差し替え*/
+document.querySelectorAll(".works-grid article").forEach((article) => {
+    if(article.classList.contains('movie') || article.classList.contains('music')) {
+        article.querySelector(".collection").addEventListener('click', () => {
+            if(article.querySelector(".collection").querySelector('video')) {
+                let videoSrc = article.querySelector(".collection").querySelector('video').getAttribute('src');
+                let imgSrc = videoSrc.substring(0, videoSrc.lastIndexOf('.')) + '.png';
+
+                article.querySelector(".collection").innerHTML = `<img src="${imgSrc}" alt="">`;
+                return;
+            }
+            
+            //画像のパス名
+            let imgSrc = article.querySelector(".collection").querySelector('img').getAttribute('src');
+            //開始地点=0 から 最終地点=最後の「.」 までに .mp4を加える
+            let videoSrc = imgSrc.substring(0, imgSrc.lastIndexOf('.')) + '.mp4';
+
+            //playsinline = スマホ用ページ内再生
+            //innerHTML = HTML上書き
+            article.querySelector(".collection").innerHTML = `<video src="${videoSrc}" autoplay loop playsinline></video>`;
+        });
+    }
+});
+

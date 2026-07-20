@@ -188,6 +188,11 @@ nav li a {
     margin-bottom: 0;
 }
 
+.collection video {
+    width: 100%;
+    margin-bottom: 0;
+}
+
 .collection-title {
     font-size: 16px;
     font-weight: 600;
