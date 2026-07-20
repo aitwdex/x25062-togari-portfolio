@@ -304,8 +304,8 @@ fieldset {
         font-size: 14px;
     }
     .form-content textarea {
-        max-width: 520px;
-        min-width: 520px;
+        max-width: 470px;
+        min-width: 470px;
         min-height: 200px;
         background-color: white;
         font-size: 14px;

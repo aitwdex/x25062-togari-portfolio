@@ -129,14 +129,6 @@ document.querySelector(".btn-left").addEventListener('click', () => {
     }
 });
 
-/*動画再生hover*/
-document.querySelector(".collection-video").addEventListener('mouseenter', () => {
-    document.querySelector(".collection-video").play();
-});
-document.querySelector(".collection-video").addEventListener('mouseleave', () => {
-    document.querySelector(".collection-video").pause();
-});
-
 /*formのselectアニメーション　クッリク時表示*/
 document.querySelectorAll('.select input[type="radio"]').forEach(radio => {
     radio.addEventListener('click', () => {
