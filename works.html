@@ -55,19 +55,20 @@
 
                 <div class="works-collections">
                     <div class="tag">
-                        <button class="tag-btn select-tag">#ALL</button>
-                        <button class="tag-btn">#映像</button>
-                        <button class="tag-btn">#イラスト</button>
-                        <button class="tag-btn">#3DCG</button>
-                        <button class="tag-btn">#Webデザイン</button>
-                        <button class="tag-btn">#音楽</button>
+                        <button id="all" class="tag-btn select-tag">#ALL</button>
+                        <button id="movie" class="tag-btn">#映像</button>
+                        <button id="illust" class="tag-btn">#イラスト</button>
+                        <button id="cg" class="tag-btn">#3DCG</button>
+                        <button id="web" class="tag-btn">#Webデザイン</button>
+                        <button id="music" class="tag-btn">#音楽</button>
                     </div>
 
                     <div class="works-grid">
                         <!--PC1行目-->
-                        <article>
+                        <article class="music">
                             <div class="collection">
                                 <img src="images/collection/music/ginger-video.png" alt="TOMOO-Ginger 音楽Copyの音楽">
+                                <div class="collection-filter"></div>
                             </div>
                             <h4 class="collection-title">TOMOO-Ginger 音楽Copy</h4>
                             <div class="collection-tags">
@@ -75,9 +76,10 @@
                             </div>
                         </article>
 
-                        <article>
+                        <article class="cg">
                             <div class="collection">
                                 <img src="images/collection/CG/sun.png" alt="太陽系-宇宙空間の映像">
+                                <div class="collection-filter"></div>
                             </div>
                             <h4 class="collection-title">太陽系-宇宙空間</h4>
                             <div class="collection-tags">
@@ -85,20 +87,22 @@
                             </div>
                         </article>
 
-                        <article>
+                        <article class="movie">
                             <div class="collection">
                                 <img src="images/collection/movie/shiro.png" alt="第6回TYO学生ムービーアワードの映像">
+                                <div class="collection-filter"></div>
                             </div>
-                            <h4 class="collection-title">だから私は白旗をあげた / 第6回TYO学生ムービーアワード</h4>
+                            <h4 class="collection-title">第6回TYO学生ムービーアワード / 撮影映像</h4>
                             <div class="collection-tags">
                                 <div class="collection-tag">#映像</div>
                             </div>
                         </article>
 
                         <!--PC2行目-->
-                        <article>
+                        <article class="cg">
                             <div class="collection">
                                 <img src="images/collection/CG/pokemon-img.png" alt="Pokémon-Halloween Partyの画像">
+                                <div class="collection-filter"></div>
                             </div>
                             <h4 class="collection-title">Pokémon-Halloween Party</h4>
                             <div class="collection-tags">
@@ -106,24 +110,208 @@
                             </div>
                         </article>
 
-                        <article>
+                        <article class="movie">
                             <div class="collection">
                                 <img src="images/collection/movie/op1.png" alt="オープニング映像">
+                                <div class="collection-filter"></div>
                             </div>
-                            <h4 class="collection-title">OP映像 / Cyber style</h4>
+                            <h4 class="collection-title">OP映像-Cyber style</h4>
                             <div class="collection-tags">
                                 <div class="collection-tag">#映像</div>
                             </div>
                         </article>
 
-                        <article>
+                        <article class="movie cg">
                             <div class="collection">
                                 <img src="images/collection/CG/pokemon1.png" alt="Pokémonの映像">
+                                <div class="collection-filter"></div>
                             </div>
                             <h4 class="collection-title">Pokémon / CG映像</h4>
                             <div class="collection-tags">
                                 <div class="collection-tag">#映像</div>
                                 <div class="collection-tag">#3DCG</div>
+                            </div>
+                        </article>
+
+                        <!--PC3行目-->
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/clothes.png" alt="服のデザイン">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">服のデザイン</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <article class="web">
+                            <div class="collection">
+                                <img src="images/collection/web/ceed.png" alt="ceedのWebデザイン">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">CEEDサークル / Webデザイン</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#Webデザイン</div>
+                            </div>
+                        </article>
+
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/c-jaguti.png" alt="蛇口の模写">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">蛇口 / 模写</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <!--PC4行目-->
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/c-te.png" alt="手の模写">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">手 / 模写</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/c-inori.png" alt="メダリストの結束いのりのイラスト">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">[メダリスト]結束いのり / イラスト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/c-ban.png" alt="七つの大罪のバンのイラスト">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">[七つの大罪]バン / イラスト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <!--PC5行目-->
+                        <article class="cg">
+                            <div class="collection">
+                                <img src="images/collection/CG/city.png" alt="街のモデリング">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">街 / モデリング</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#映像</div>
+                                <div class="collection-tag">#3DCG</div>
+                            </div>
+                        </article>
+
+                        <article class="web">
+                            <div class="collection">
+                                <img src="images/collection/web/season.png" alt="季節のWebサイト">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">四季 / Webサイト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#Webデザイン</div>
+                            </div>
+                        </article>
+
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/chara1.png" alt="キャラクター">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">オリジナルキャラクター / イラスト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <!--PC6行目-->
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/gawrl_aicon1.png" alt="アイコンデザイン">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">アイコン / デザイン</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/ait.png" alt="ピクセルアート">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">ピクセルアート / イラスト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <article class="illust">
+                            <div class="collection">
+                                <img src="images/collection/illustration/game.png" alt="愛知工業大学パンフレット表紙">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">東京ゲームショウ-デザインチーム / 表紙デザイン</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#イラスト</div>
+                            </div>
+                        </article>
+
+                        <!--PC7行目-->
+                        <article class="cg">
+                            <div class="collection">
+                                <img src="images/collection/CG/sea.png" alt="海中神殿">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">海中神殿 / モデリング</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#3DCG</div>
+                            </div>
+                        </article>
+
+                        <article class="cg">
+                            <div class="collection">
+                                <img src="images/collection/CG/apple.png" alt="お祭りアニメーション">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">りんごと蝶々 / アニメーション</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#3DCG</div>
+                            </div>
+                        </article>
+
+                        <article class="web">
+                            <div class="collection">
+                                <img src="images/collection/web/ec.png" alt="ECサイトのWebデザイン">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">ECサイト / Webサイト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#Webデザイン</div>
+                            </div>
+                        </article>
+                        <!--PC7行目-->
+                        <article class="web">
+                            <div class="collection">
+                                <img src="images/collection/web/valo.png" alt="Valorant紹介サイト">
+                                <div class="collection-filter"></div>
+                            </div>
+                            <h4 class="collection-title">Valorant / Webサイト</h4>
+                            <div class="collection-tags">
+                                <div class="collection-tag">#Webデザイン</div>
                             </div>
                         </article>
                     </div>
