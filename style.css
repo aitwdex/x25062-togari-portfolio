@@ -760,7 +760,7 @@ fieldset {
     }
 
     .skills-illustration {
-        width: 450px;
+        width: 400px;
         height: 615px;
     }
     .illustration-img {
@@ -781,7 +781,7 @@ fieldset {
     }
     form {
         padding: 50px 40px 40px;
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-left: 20px;
         margin-right: 20px;
@@ -914,6 +914,9 @@ fieldset {
     }
     .copyright {
         font-size: 14px;
+    }
+    fieldset {
+        gap: 70px;
     }
 }
 /*-----------------------------------------------------------------------*/

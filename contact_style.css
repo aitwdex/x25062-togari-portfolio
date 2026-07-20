@@ -285,7 +285,7 @@ fieldset {
 @media (max-width: 900px) {
     form {
         padding: 50px 40px 40px;
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-left: 20px;
         margin-right: 20px;
@@ -406,6 +406,10 @@ fieldset {
     }
     .copyright {
         font-size: 14px;
+    }
+
+    fieldset {
+        gap: 70px;
     }
 }
 /*-----------------------------------------------------------------------*/
