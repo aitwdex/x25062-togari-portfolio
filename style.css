@@ -768,7 +768,7 @@ fieldset {
     }
 
     .skills-illustration {
-        width: 400px;
+        width: 550px;
         height: 615px;
     }
     .illustration-img {
@@ -962,6 +962,10 @@ fieldset {
     }
     .comment {
         width: 330px;
+    }
+    .skills-illustration {
+        width: 400px;
+        height: 615px;
     }
 }
 /*-----------------------------------------------------------------------*/

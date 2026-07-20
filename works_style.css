@@ -347,17 +347,21 @@ nav li a {
     }
 }
 /*-----------------------------------------------------------------------*/
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .tag-btn {
         height: 28px;
         font-size: 10px;
     }
 }
 /*-----------------------------------------------------------------------*/
-@media (max-width: 350px) {
+@media (max-width: 365px) {
+    .tag {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
     .tag-btn {
         height: 24px;
-        font-size: 7px;
+        font-size: 12px;
     }
 }
 /*-----------------------------------------------------------------------*/
