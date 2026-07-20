@@ -325,11 +325,13 @@ nav li a {
 /*-----------------------------------------------------------------------*/
 @media (max-width: 600px) {
     .tag {
-        gap: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
     }
     .tag-btn {
         height: 30px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .works-collections {
         padding-left: 40px;
