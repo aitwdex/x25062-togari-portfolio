@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Togari Koga Portfolio</title>
+        <meta name="description" content="大学生のポートフォリオ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/svg+xml" href="images/aicon.png">
+
+    <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="contact_style.css" rel="stylesheet">
+
+    </head>
+
+	<body>
+        <main>
+            <section class="top">
+                <div class="top-header">
+                    <h2 id="top">TOGARI KOGA</h2>
+                    <h3>PORTFOLIO</h3>
+                </div>
+
+                <button class="burger"></button>
+                <div class="in-burger close-burger">
+                    <nav>
+                        <ul>
+                            <li class="hover-nav"><a href="index.html">Home</a></li>
+                            <li class="hover-nav"><a href="works.html">Works</a></li>
+                            <li class="now-page"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="snsaicon">
+                        <a class="hover-nav sns-aicon" href="https://youtube.com/@trading_gau" target="_blank" rel="noopener noreferrer"><img src="images/sns/youtube-logo1.svg" alt="Youtube"></a>
+                        <a class="hover-nav sns-aicon" href="https://instagram.com/koga_.110?igsh=bHo3YW8xc3F4dTZ1&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="images/sns/instagram-logo1.svg" alt="Instagram"></a>
+                        <a class="hover-nav sns-aicon" href="https://tiktok.com/@trading_gau" target="_blank" rel="noopener noreferrer"><img src="images/sns/tiktok-logo1.svg" alt="TikTok"></a>
+                        <a class="hover-nav sns-aicon" href="https://x.com/toga_ri?s=11" target="_blank" rel="noopener noreferrer"><img src="images/sns/x-logo1.svg" alt="X"></a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+
+                <p class="description">案件のご相談は、下記のフォームよりお問い合わせください。<br>
+                内容を確認し次第、メールにてご連絡いたします。<br>
+                送信ボタンを押す前に、必ず入力内容をご確認いただきますようお願い致します。</p>
+
+                <!--formの作成　Formspreeと連動させて実際にメールで届くように設定-->
+                <div class="form-container">
+                    <form action="https://formspree.io/f/xzdnrqlg" method="POST"> <!--method="POST"がないと送信されない。初期設定のGETだとURLに不具合が-->
+                        <div class="form-group">
+                            <label class="form-group-title" for="name">お名前</label>
+                            <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group-title" for="company">会社・団体名
+                                <div class="any">※任意</div>
+                            </label>
+                            <input type="text" id="company" name="company" placeholder="例）株式会社制作">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group-title" for="email">メールアドレス</label>
+                            <input type="email" id="email" name="_replyto" placeholder="例）example@mail.com" required>
+                        </div>
+
+                        <fieldset aria-labelledby="contact-type"> <!-- aria-labelとidを合わせることで読み上げ機能に対応！　fieldsetとlegendの代わり-->
+                            <div id="contact-type" class="form-group-title">お問い合わせ種別</div>
+                            <div class="checkbox-group">
+                                <div class="select">
+                                    <input type="radio" id="production" name="work" value="production">
+                                    <div class="circle-btn"><div class="in-circle"></div></div>
+                                    <label class="checkbox-title" for="production">制作依頼</label>
+                                </div>
+                                <div class="select">
+                                    <input type="radio" id="partnership" name="work" value="partnership">
+                                    <div class="circle-btn"><div class="in-circle"></div></div>
+                                    <label class="checkbox-title" for="partnership">パートナーシップ</label>
+                                </div>
+                                <div class="select">
+                                    <input type="radio" id="others" name="work" value="others">
+                                    <div class="circle-btn"><div class="in-circle"></div></div>
+                                    <label class="checkbox-title" for="others">その他</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-content">
+                            <label class="form-group-title" for="content">お問い合わせ内容</label>
+                            <textarea id="content" name="content" placeholder="お問い合わせ内容はこちらへ" rows="12"></textarea>
+                        </div>
+
+                        <div class="form-btn">
+                            <button type="submit" class="btn">この内容で送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+            <footer>
+                <p class="copyright">&copy; 2026 Togari Koga</p>
+            </footer>
+        </main>
+
+        <script src="js/contact.js"></script>
+    </body>
+</html>

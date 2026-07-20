@@ -1,12 +1,12 @@
 /*face画像をクリック時に位置変更(classの追加・削除)*/
-document.querySelector(".faceimg1").addEventListener('click', (e) => {
+document.querySelector(".faceimg1").addEventListener('click', () => {
     if(document.querySelector(".profile-img").classList.contains('faceswap')) {
         return;
     }
     document.querySelector(".profile-img").classList.add('faceswap');
 });
 
-document.querySelector(".faceimg2").addEventListener('click', (e) => {
+document.querySelector(".faceimg2").addEventListener('click', () => {
     if(document.querySelector(".profile-img").classList.contains('faceswap')) {
         document.querySelector(".profile-img").classList.remove('faceswap')
     }
@@ -149,7 +149,7 @@ document.querySelectorAll('.select input[type="radio"]').forEach(radio => {
     });
 });
 
-/*ハンバーがクリック　nav表示*/
+/*ハンバーをクリック　nav表示*/
 document.querySelector(".burger").addEventListener('click', () => {
     if(document.querySelector(".in-burger").classList.contains('close-burger')) {
         document.querySelector(".in-burger").classList.remove('close-burger');

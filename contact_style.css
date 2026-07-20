@@ -1,0 +1,462 @@
+@charset "UTF-8";
+html {
+    /*htmlにこれを書くとんるっとした動きに！(Topbuttonを押したとき)*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-image: url(images/body-background.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+
+    /*横のはみ出しカット = 横スクローク阻止*/
+    overflow-x: hidden;
+}
+
+.btn {
+    background-color: #261814;
+}
+
+
+/*top*/
+.top-header h2 {
+    text-align: center;
+    font-size: 48px;
+    padding-top: 15px;
+    letter-spacing: 5%; /*文字間隔*/
+}
+
+.top-header h3 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 30%; /*文字間隔*/
+}
+
+
+/*nav*/
+nav {
+    /*画面上に固定*/
+    position: fixed;
+    top: 26px;
+    right: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    color: #B4937C;
+
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 14px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 185px;
+    height: 37px;
+    border-radius: 100px;
+}
+
+nav li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.snsaicon {
+    /*画面上に固定*/
+    position: fixed;
+    top: 180px;
+    right: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+
+    z-index: 100;
+}
+
+.snsaicon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.snsaicon a img {
+    width: 34px;
+}
+
+/*section*/
+.section-title {
+    font-size: 64px;
+    padding-top: 12px;
+    padding-bottom: 1px;
+    padding-left: 10%;
+}
+
+/*contact*/
+.description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px 50px;
+    width: 850px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    gap: 60px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-title {
+    font-size: 20px;
+}
+
+.form-group-title .any {
+    font-size: 14px;
+    font-weight: 400;
+    color: #D9D9D9;
+    padding-top: 9px;
+}
+
+.form-group input {
+    width: 500px;
+    height: 60px;
+    background-color: white;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    color: #261814;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-group input::placeholder {
+    color: #D1D1D1;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+}
+
+.select {
+    /*基準(radioボタンと連携させるため)*/
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select input[type="radio"] {
+    /*display: none;だと読み上げ機能に反応しなくなる*/
+    opacity: 0; /*透明化*/
+    width: 100%;
+    height: 100%;
+
+    /*絶対値配置*/
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+.select .circle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.select .in-circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.select .in-circle-click {
+    background-color: #261814;
+}
+
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkbox-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #261814;
+    
+    padding-top: 2px;/*強制中央(透明化したradioの枠線の分？)*/
+}
+
+.form-content textarea {
+    width: 100%;
+    max-width: 710px;
+    min-width: 710px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    color: #261814;
+    padding: 20px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.form-content textarea::placeholder {
+    color: #D1D1D1;
+}
+
+.form-btn {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.form-btn button {
+    width: 300px;
+    height: 80px;
+    border-radius: 45px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*copyright*/
+.copyright {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+/*-----------------------------------------------------------------------*/
+@media (max-width: 900px) {
+    form {
+        padding: 50px 40px 40px;
+        width: 600px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 35px;
+        gap: 50px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .form-group input {
+        width: 100%;
+        height: 54px;
+        background-color: white;
+        border-radius: 35px;
+        font-size: 14px;
+    }
+    .form-content textarea {
+        max-width: 520px;
+        min-width: 520px;
+        min-height: 200px;
+        background-color: white;
+        font-size: 14px;
+    }
+    .form-btn button {
+        width: 280px;
+        height: 76px;
+        border-radius: 38px;
+        font-size: 18px;
+    }
+}
+/*-----------------------------------------------------------------------*/
+@media (max-width: 800px) {
+    .section-title {
+        font-size: 40px;
+        padding-left: 10px;
+        border-bottom: 1px solid white;
+        width: 180px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+    .top-header h2 {
+        font-size: 32px;
+    }
+
+    .top-header h3 {
+        font-size: 24px;
+        letter-spacing: 20%; /*文字間隔*/
+    }
+    .burger {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 100;
+        background-color: white;
+
+        background-image: url(images/list.svg);
+        background-position: center;
+    }
+    .burger-open {
+        background-image: url(images/closebtn.svg);
+        background-color: rgba(0, 0, 0, 0);
+        top: 12px;
+        right: 12px;
+        width: 46px;
+        height: 46px;
+    }
+    .close-burger {
+        display: none;
+    }
+    .in-burger {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(180, 147, 124, 0.5);
+
+        z-index: 99;
+    }
+    nav {
+        margin-top: 50px;
+    }
+    .snsaicon {
+        margin-top: 50px;
+    }
+    .description {
+        font-size: 14px;
+    }
+}
+/*-----------------------------------------------------------------------*/
+@media (max-width: 600px) {
+    .description {
+        font-size: 12px;
+    }
+    form {
+        padding: 50px 30px 40px;
+        width: 450px;
+        gap: 40px;
+    }
+    .form-group-title {
+        font-size: 16px;
+    }
+    .form-group-title .any {
+        font-size: 10px;
+    }
+    .form-content textarea {
+        max-width: 390px;
+        min-width: 390px;
+        min-height: 200px;
+        background-color: white;
+        font-size: 14px;
+    }
+    .form-btn button {
+        width: 270px;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 18px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}
+/*-----------------------------------------------------------------------*/
+/*その他*/
+.now-page {
+    color: #261814;
+}
+
+.hid {
+    display: none;
+}
+
+/*その他の動き*/
+.btn {
+    cursor: pointer; /*カーソルの形変更*/
+}
+.select input[type="radio"] {
+    cursor: pointer;
+}
+.collection-number .circle {
+    cursor: pointer;
+}
+
+/*アニメーション*/
+.faceswap .faceimg1 {
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+.faceswap .faceimg2 {
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.btn-click {
+    background-color: white;
+    color: #261814;
+    border: 1px solid #261814;
+}
+
+/*ホバー時*/
+.hover-nav:hover {
+    color: white;
+    background-color: #B4937C;
+    border: 1px solid white;
+}
+.hover-arrow:hover {
+    background-color: white;
+    border-radius: 50%;
+}
