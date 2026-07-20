@@ -417,7 +417,6 @@ fieldset {
 .now-page {
     color: #261814;
 }
-
 .hid {
     display: none;
 }
@@ -429,21 +428,8 @@ fieldset {
 .select input[type="radio"] {
     cursor: pointer;
 }
-.collection-number .circle {
-    cursor: pointer;
-}
 
 /*アニメーション*/
-.faceswap .faceimg1 {
-    top: 15px;
-    left: 15px;
-    z-index: 1;
-}
-.faceswap .faceimg2 {
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
 .btn-click {
     background-color: white;
     color: #261814;
@@ -455,8 +441,4 @@ fieldset {
     color: white;
     background-color: #B4937C;
     border: 1px solid white;
-}
-.hover-arrow:hover {
-    background-color: white;
-    border-radius: 50%;
 }
