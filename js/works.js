@@ -67,7 +67,7 @@ document.querySelectorAll(".works-grid article").forEach((article) => {
         article.querySelector(".collection").addEventListener('click', () => {
             if(article.querySelector(".collection").querySelector('video')) {
                 let videoSrc = article.querySelector(".collection").querySelector('video').getAttribute('src');
-                let imgSrc = videoSrc.substring(0, videoSrc.lastIndexOf('.')) + '.png';
+                let imgSrc = videoSrc.substring(0, videoSrc.lastIndexOf('.')) + '.webp';
 
                 article.querySelector(".collection").innerHTML = `<img src="${imgSrc}" alt="">`;
                 return;
