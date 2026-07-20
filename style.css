@@ -781,8 +781,10 @@ fieldset {
     }
     form {
         padding: 50px 40px 40px;
-        width: 550px;
+        width: 100%;
         height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 35px;
         gap: 50px;
@@ -800,11 +802,14 @@ fieldset {
         font-size: 14px;
     }
     .form-content textarea {
-        max-width: 470px;
-        min-width: 470px;
+        max-width: 100%;
+        min-width: 100%;
         min-height: 200px;
         background-color: white;
         font-size: 14px;
+
+        /*縦方向の移動のみ*/
+        resize: vertical;
     }
     .form-btn button {
         width: 280px;
@@ -886,8 +891,6 @@ fieldset {
         font-size: 12px;
     }
     form {
-        padding: 50px 30px 40px;
-        width: 450px;
         gap: 40px;
     }
     .form-group-title {
