@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
 
     overflow-x: hidden;
+    touch-action: manipulation;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
 
     /*横のはみ出しカット = 横スクローク阻止*/
     overflow-x: hidden;
+    touch-action: manipulation;
 }
 
 .btn {
