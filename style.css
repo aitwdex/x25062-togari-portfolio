@@ -877,6 +877,41 @@ fieldset {
     .description {
         font-size: 14px;
     }
+
+    .profile-img {
+        width: 365px;
+    }
+    .faceimg1 {
+        width: 350px;
+        height: 350px;
+    }
+    .faceimg2 {
+        width: 350px;
+        height: 350px;
+    }
+    .sainimg {
+        top: 250px;
+        left: -60px;
+        width: auto;
+        height: 150px;
+    }
+    .about-profile dl {
+        padding-top: 450px;
+        padding-left: 60px;
+    }
+    .profile-section dt {
+        width: 130px;
+        font-size: 16px;
+    }
+    .profile-section dd {
+        width: 240px;
+    }
+    .ja-profile {
+        font-size: 16px;
+    }
+    .en-profile {
+        font-size: 8px
+    }
 }
 /*-----------------------------------------------------------------------*/
 @media (max-width: 600px) {
