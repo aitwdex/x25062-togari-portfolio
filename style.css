@@ -3,6 +3,7 @@ html {
     /*htmlにこれを書くとんるっとした動きに！(Topbuttonを押したとき)*/
     scroll-behavior: smooth;
 
+    /*拡大縮小禁止*/
     overflow-x: hidden;
     touch-action: manipulation;
 }
