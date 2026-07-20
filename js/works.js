@@ -39,3 +39,23 @@ document.querySelectorAll(".hover-arrow").forEach((aicon) => {
 });
 
 
+/*タグと作品の連携*/
+document.querySelectorAll(".tag-btn").forEach((button) => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll(".tag-btn").forEach((btn) => {
+            btn.classList.remove('select-tag');
+        });
+        button.classList.add('select-tag');
+
+        let targetId = button.id;
+
+        document.querySelectorAll(".works-grid article").forEach((article) => {
+            if(targetId == 'all' || article.classList.contains(targetId)) {
+                article.classList.remove('hid');
+            }
+            else {
+                article.classList.add('hid');
+            }
+        });
+    });
+});

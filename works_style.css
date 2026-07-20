@@ -296,7 +296,7 @@ nav li a {
     color: #261814;
 }
 .hid {
-    display: none;
+    display: none !important; /*gridに負けないように優先的に*/
 }
 
 /*アニメーション*/
