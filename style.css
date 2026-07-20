@@ -466,7 +466,7 @@ nav li {
 }
 
 .ja-gauge {
-    width: 500px;
+    width: 850px;
 }
 
 .gauge-bar {
@@ -536,12 +536,13 @@ form {
 
 .form-group input {
     width: 500px;
-    min-height: 60px;
+    height: 60px;
     background-color: white;
     border-radius: 35px;
     border: 1px solid #D9D9D9;
     color: #261814;
     padding-left: 35px;
+    padding-right: 35px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -647,6 +648,21 @@ fieldset {
 }
 
 /*-----------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+    .skills-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills-illustration {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills-languages {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*-----------------------------------------------------------------------*/
 @media (max-width: 1100px) {
     .top-title {
         font-size: 70px;
@@ -727,6 +743,60 @@ fieldset {
     .collection {
         display: block; /*インラインの隙間を消す(文字扱いの隙間)*/
     }
+
+    .skills-illustration {
+        width: 450px;
+        height: 615px;
+    }
+    .illustration-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .illustration-portrait-img {
+        margin: 0 auto;
+        width: 150px;
+        height: auto;
+    }
+    .illustration-landscape-img {
+        grid-column: 1 / 3;
+        width: 230px;
+        height: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form {
+        padding: 50px 40px 40px;
+        width: 600px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 35px;
+        gap: 60px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .form-group input {
+        width: 100%;
+        height: 54px;
+        background-color: white;
+        border-radius: 35px;
+        font-size: 14px;
+    }
+    .form-content textarea {
+        max-width: 520px;
+        min-width: 520px;
+        min-height: 200px;
+        background-color: white;
+        font-size: 14px;
+    }
+    .form-btn button {
+        width: 280px;
+        height: 76px;
+        border-radius: 38px;
+        font-size: 18px;
+    }
 }
 /*-----------------------------------------------------------------------*/
 @media (max-width: 800px) {
@@ -783,6 +853,10 @@ fieldset {
     .uparrow {
         display: none;
     }
+
+    .description {
+        font-size: 14px;
+    }
 }
 /*-----------------------------------------------------------------------*/
 @media (max-width: 600px) {
@@ -791,6 +865,33 @@ fieldset {
         height: 50px;
         border-radius: 25px;
         font-size: 20px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+    form {
+        padding: 50px 30px 40px;
+        width: 450px;
+    }
+    .form-group-title {
+        font-size: 16px;
+    }
+    .form-group-title .any {
+        font-size: 10px;
+    }
+    .form-content textarea {
+        max-width: 390px;
+        min-width: 390px;
+        min-height: 200px;
+        background-color: white;
+        font-size: 14px;
+    }
+    .form-btn button {
+        width: 270px;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 18px;
     }
 }
 /*-----------------------------------------------------------------------*/
