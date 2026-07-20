@@ -415,6 +415,52 @@ fieldset {
     }
 }
 /*-----------------------------------------------------------------------*/
+@media (max-width: 500px) {
+    .description {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+    .form-btn button {
+        width: 90%;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 16px;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .checkbox-group {
+        padding-left: 25px;
+    }
+    .checkbox-title {
+        font-size: 14px;
+    }
+    .form-group input {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 12px;
+    }
+    .form-content textarea {
+        border-radius: 25px;
+        padding: 25px 25px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+}
+/*-----------------------------------------------------------------------*/
+@media (max-width: 400px) {
+        .form-btn button {
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+}
+/*-----------------------------------------------------------------------*/
+
 /*その他*/
 .now-page {
     color: #261814;
