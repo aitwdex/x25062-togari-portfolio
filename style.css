@@ -820,6 +820,9 @@ fieldset {
         border-radius: 38px;
         font-size: 18px;
     }
+    fieldset {
+        gap: 50px;
+    }
 }
 /*-----------------------------------------------------------------------*/
 @media (max-width: 800px) {
@@ -937,13 +940,6 @@ fieldset {
     .form-group-title .any {
         font-size: 10px;
     }
-    .form-content textarea {
-        max-width: 390px;
-        min-width: 390px;
-        min-height: 200px;
-        background-color: white;
-        font-size: 14px;
-    }
     .form-btn button {
         width: 270px;
         height: 70px;
@@ -952,9 +948,6 @@ fieldset {
     }
     .copyright {
         font-size: 14px;
-    }
-    fieldset {
-        gap: 70px;
     }
 }
 /*-----------------------------------------------------------------------*/
