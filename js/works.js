@@ -24,20 +24,6 @@ document.querySelector(".burger").addEventListener('click', () => {
     }
 });
 
-/*arrowをhover差し替え*/
-document.querySelectorAll(".hover-arrow").forEach((aicon) => {
-    const whiteSrc = aicon.querySelector('img').src;
-    //〇〇.replace(◻︎, △) -> 〇〇の画像名が入る(◻︎までを、△に変更)
-    const brownSrc = whiteSrc.replace('.svg', '_brown.svg');
-
-    aicon.addEventListener('mouseenter', () => {
-        aicon.querySelector('img').src = brownSrc;
-    });
-    aicon.addEventListener('mouseleave', () => {
-        aicon.querySelector('img').src = whiteSrc;
-    });
-});
-
 /*タグと作品の連携*/
 document.querySelectorAll(".tag-btn").forEach((button) => {
     button.addEventListener('click', () => {
