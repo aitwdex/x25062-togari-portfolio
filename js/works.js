@@ -38,7 +38,6 @@ document.querySelectorAll(".hover-arrow").forEach((aicon) => {
     });
 });
 
-
 /*タグと作品の連携*/
 document.querySelectorAll(".tag-btn").forEach((button) => {
     button.addEventListener('click', () => {
@@ -59,7 +58,6 @@ document.querySelectorAll(".tag-btn").forEach((button) => {
         });
     });
 });
-
 
 /*作品の再生・停止 / videoへ差し替え*/
 document.querySelectorAll(".works-grid article").forEach((article) => {
@@ -84,4 +82,3 @@ document.querySelectorAll(".works-grid article").forEach((article) => {
         });
     }
 });
-
