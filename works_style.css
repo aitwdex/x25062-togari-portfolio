@@ -186,6 +186,7 @@ nav li a {
     aspect-ratio: 16 / 9;
     border: 1px solid #261814;
     overflow: hidden; /*無駄な部分を隠す*/
+    background-color: rgb(80, 80, 80);
 }
 
 .collection img {
