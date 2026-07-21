@@ -327,6 +327,10 @@ nav li a {
     cursor: pointer;
 }
 
+.hover-arrow {
+    border-radius: 50%;
+}
+
 .collection-frame {
     width: 711px;
     height: 400px;
@@ -1180,7 +1184,6 @@ fieldset {
 }
 .hover-arrow:hover {
     background-color: white;
-    border-radius: 50%;
 }
 .hover-uparrow:hover {
     background-color: white;
