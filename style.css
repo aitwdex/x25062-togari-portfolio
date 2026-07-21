@@ -307,8 +307,24 @@ nav li a {
     padding-bottom: 30px;
 }
 
-.arrow {
+.btn-left {
+    background-image: url(images/arrow/arrow-circle-left1.svg);
     width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.btn-right {
+    background-image: url(images/arrow/arrow-circle-right1.svg);
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
 }
 
 .collection-frame {
@@ -1172,4 +1188,10 @@ fieldset {
 }
 .uparrow:hover .img-white {
     background-image: url(images/arrow/arrow-circle-up1_brown.svg);
+}
+.btn-left:hover {
+    background-image: url(images/arrow/arrow-circle-left1_brown.svg);
+}
+.btn-right:hover {
+    background-image: url(images/arrow/arrow-circle-right1_brown.svg);
 }

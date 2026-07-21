@@ -37,20 +37,6 @@ document.querySelectorAll(".sns-aicon").forEach((aicon) => {
     });
 });
 
-/*arrowをhover差し替え*/
-document.querySelectorAll(".hover-arrow").forEach((aicon) => {
-    const whiteSrc = aicon.querySelector('img').src;
-    //〇〇.replace(◻︎, △) -> 〇〇の画像名が入る(◻︎までを、△に変更)
-    const brownSrc = whiteSrc.replace('.svg', '_brown.svg');
-
-    aicon.addEventListener('mouseenter', () => {
-        aicon.querySelector('img').src = brownSrc;
-    });
-    aicon.addEventListener('mouseleave', () => {
-        aicon.querySelector('img').src = whiteSrc;
-    });
-});
-
 /*workのmove-circleのクリック移動(css変更)*/
 document.querySelector(".circle1").addEventListener('click', () => {
     document.querySelector(".move-circle").style.left = '2px';
