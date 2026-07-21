@@ -141,7 +141,7 @@ document.querySelectorAll('.select input[type="radio"]').forEach(radio => {
     });
 });
 
-/*ハンバーをクリック　nav表示*/
+/*ハンバーガーをクリック　nav表示*/
 document.querySelector(".burger").addEventListener('click', () => {
     if(document.querySelector(".in-burger").classList.contains('close-burger')) {
         document.querySelector(".in-burger").classList.remove('close-burger');

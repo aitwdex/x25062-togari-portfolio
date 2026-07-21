@@ -12,7 +12,7 @@ document.querySelectorAll(".sns-aicon").forEach((aicon) => {
     });
 });
 
-/*ハンバーをクリック　nav表示*/
+/*ハンバーガーをクリック　nav表示*/
 document.querySelector(".burger").addEventListener('click', () => {
     if(document.querySelector(".in-burger").classList.contains('close-burger')) {
         document.querySelector(".in-burger").classList.remove('close-burger');
