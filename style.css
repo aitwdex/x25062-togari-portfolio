@@ -778,6 +778,9 @@ fieldset {
 }
 /*-----------------------------------------------------------------------*/
 @media (max-width: 900px) {
+    .hover-arrow {
+        opacity:s 0;
+    }
     .collection-frame {
         /*とて横日の固定*/
         aspect-ratio: 711 / 400;
@@ -1186,8 +1189,6 @@ fieldset {
 }
 .hover-arrow:hover {
     background-color: white;
-    width: 70px;
-    height: 70px;
 }
 .hover-uparrow:hover {
     background-color: white;
