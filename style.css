@@ -1186,6 +1186,8 @@ fieldset {
 }
 .hover-arrow:hover {
     background-color: white;
+    width: 70px;
+    height: 70px;
 }
 .hover-uparrow:hover {
     background-color: white;
